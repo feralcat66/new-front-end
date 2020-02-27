@@ -44,7 +44,7 @@ export default class TodoApp extends Component {
 
                             const newTodos = this.state.todos.slice();
 
-                            const matchingTodo = newTodos.find((thisTodo) => todo.id === this.Todo.id);
+                            const matchingTodo = newTodos.find((thisTodo) => todo.id === thisTodo.id);
 
                             matchingTodo.complete = !todo.complete
 
